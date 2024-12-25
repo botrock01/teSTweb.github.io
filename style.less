@@ -1,0 +1,62 @@
+@import url('./vars.less');
+
+.block{
+    height: @heightBlock;
+    width: @widthBlock;
+    background-color: @backColorBlue;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+*,html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: @headerWidth;
+    height: @headerHeight;
+    background-color: @colorHeader;
+    color: cadetblue;
+    .header_logo{
+        color: coral;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    @media screen and (max-width:700px){
+        height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    }
+}
+.block1{
+    .block;
+    background-color: @backColorBlue;
+    color: blueviolet;
+}
+.block2{
+    .block;
+    background-color: @backColorGreen;
+    color: black;
+}
+.block3{
+    .block;
+    background-color: @backColorRed;
+    color: blue;
+}
+.block4{
+    .block;
+    background-color: @backColorYellow;
+    color: brown;
+}
